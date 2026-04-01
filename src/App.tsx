@@ -21,7 +21,8 @@ import {
   Network,
   Monitor,
   CheckCircle2,
-  ArrowRight
+  ArrowRight,
+  MessageCircle
 } from 'lucide-react';
 
 // --- Components ---
@@ -224,8 +225,9 @@ const SkillCard = ({ icon: Icon, title, skills, logos, color }: { icon: any, tit
 
 export default function App() {
   const GITHUB_PROFILE = "https://github.com/Sne1623";
-  const DEVCONNECT_REPO = "https://github.com/Sne1623/DevConnect";
+  const DEVCONNECT_REPO = "https://dev-connect-system.vercel.app/";
   const LINKEDIN_PROFILE = "http://www.linkedin.com/in/sinenhlanhla-khumalo-337923395";
+  const WHATSAPP_LINK = "https://wa.me/27602077059";
 
   const [showBackToTop, setShowBackToTop] = useState(false);
   const { scrollYProgress } = useScroll();
@@ -359,6 +361,16 @@ export default function App() {
                     <Linkedin size={24} className="group-hover:scale-110 transition-transform duration-500" />
                   </a>
                 </MagneticButton>
+                <MagneticButton>
+                  <a 
+                    href={WHATSAPP_LINK} 
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-16 h-16 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white flex items-center justify-center transition-all backdrop-blur-xl shadow-xl group"
+                  >
+                    <MessageCircle size={24} className="group-hover:scale-110 transition-transform duration-500" />
+                  </a>
+                </MagneticButton>
               </div>
             </motion.div>
           </motion.div>
@@ -383,7 +395,7 @@ export default function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-40 relative overflow-hidden">
+      <section id="about" className="py-24 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/5 blur-[120px] -z-10" />
         
         <div className="max-w-7xl mx-auto px-6 relative">
@@ -399,28 +411,41 @@ export default function App() {
               viewport={{ once: true }}
               className="md:col-span-6"
             >
-              <div className="mb-16">
-                <h2 className="text-7xl md:text-9xl font-black mb-10 tracking-tighter leading-none">
+              <div className="mb-12">
+                <h2 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none">
                   ABOUT <br /><span className="gradient-text">ME</span>
                 </h2>
-                <p className="text-2xl text-slate-300 font-medium leading-relaxed max-w-xl">
+                <p className="text-xl text-slate-300 font-medium leading-relaxed max-w-xl">
                   A blend of technical support expertise and a passion for building intelligent systems.
                 </p>
               </div>
 
-              <div className="space-y-10 text-slate-400 text-lg leading-relaxed max-w-xl">
+              <div className="space-y-8 text-slate-400 text-lg leading-relaxed max-w-xl">
                 <p>
-                  I am an IT Support Technician with NQF Level 4 & 5 qualifications, bringing a strong background in troubleshooting, system support, and networking.
+                  I am an IT Support Technician with Google IT Support Certificate & NQF Level 5 qualifications, bringing a strong background in troubleshooting, system support, and networking.
                 </p>
                 <p>
                   Currently, I am transitioning into development and AI/ML. I am passionate about solving real-world problems using technology, which led me to build <span className="text-white font-medium">DevConnect</span>, a real-time collaboration platform.
                 </p>
               </div>
 
+              <div className="mt-12">
+                <MagneticButton className="inline-block">
+                  <a 
+                    href="/Sinenhlanhla_Khumalo_CV.pdf" 
+                    download
+                    className="px-10 py-5 rounded-2xl bg-blue-600 text-white font-black uppercase tracking-widest transition-all flex items-center gap-4 shadow-2xl shadow-blue-600/20 hover:bg-blue-500"
+                  >
+                    <Download size={20} />
+                    Download Resume
+                  </a>
+                </MagneticButton>
+              </div>
+
               <div className="mt-16 grid grid-cols-2 gap-6">
                 {[
                   { label: "NQF 5", sub: "IT System Support", href: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/esther_khumalo_capaciti_org_za/IQC36YoycV4sQ6XRJ8vwYUJwAeCkliha5-M4KoBJM2BMieU?e=WtlhkB" },
-                  { label: "NQF 4", sub: "IT Support", href: "https://coursera.org/share/14ead30dbfb8be7d5e5572a09793b434" }
+                  { label: "GOOGLE IT", sub: "SUPPORT CERTIFICATE", href: "https://coursera.org/share/14ead30dbfb8be7d5e5572a09793b434" }
                 ].map((item, i) => (
                   <a 
                     key={i}
@@ -775,7 +800,7 @@ export default function App() {
           <div className="grid md:grid-cols-3 gap-6 mt-16">
             {[
               { label: "NQF Level 5", sub: "IT System Support", href: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/esther_khumalo_capaciti_org_za/IQC36YoycV4sQ6XRJ8vwYUJwAeCkliha5-M4KoBJM2BMieU?e=WtlhkB" },
-              { label: "NQF Level 4", sub: "IT Support", href: "https://coursera.org/share/14ead30dbfb8be7d5e5572a09793b434" },
+              { label: "GOOGLE IT SUPPORT", sub: "IT Support", href: "https://coursera.org/share/14ead30dbfb8be7d5e5572a09793b434" },
               { label: "AI BADGE", sub: "Coursera Certification", href: "https://coursera.org/share/ea24281896afc4b73a728ce846475b78" }
             ].map((cert, i) => (
               <motion.a 
@@ -840,6 +865,15 @@ export default function App() {
                   <div>
                     <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Email Me</p>
                     <p className="text-lg font-medium text-white group-hover:text-blue-400 transition-colors">khumalosinenhlanhla82@gmail.com</p>
+                  </div>
+                </a>
+                <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="flex items-center gap-6 group">
+                  <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center text-slate-400 group-hover:bg-green-600 group-hover:text-white transition-all">
+                    <MessageCircle size={24} />
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">WhatsApp Me</p>
+                    <p className="text-lg font-medium text-white group-hover:text-green-400 transition-colors">060 207 7059</p>
                   </div>
                 </a>
                 <div className="flex items-center gap-6 group">
@@ -907,6 +941,7 @@ export default function App() {
           <div className="flex gap-8">
             <a href={GITHUB_PROFILE} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-white transition-colors"><Github size={20} /></a>
             <a href={LINKEDIN_PROFILE} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-white transition-colors"><Linkedin size={20} /></a>
+            <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-white transition-colors"><MessageCircle size={20} /></a>
           </div>
         </div>
       </footer>
