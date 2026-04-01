@@ -310,7 +310,7 @@ export default function App() {
               transition={{ delay: 1, duration: 1 }}
               className="text-lg md:text-2xl text-blue-400 font-black tracking-[0.4em] uppercase mb-12"
             >
-              Junior Full-Stack Developer
+              IT Support Associate & Full-Stack Developer
             </motion.h2>
             
             <motion.p 
@@ -319,8 +319,8 @@ export default function App() {
               transition={{ delay: 1.2, duration: 1 }}
               className="text-lg md:text-xl text-slate-400 mb-16 font-light max-w-2xl mx-auto leading-relaxed"
             >
-              "I build real-world web applications using <span className="text-white font-medium">React and Firebase</span>. 
-              Passionate about solving problems and growing in the tech industry."
+              "I build, support, and secure intelligent systems using <span className="text-white font-medium">React, Firebase, and AI tools</span>. 
+              Certified in Cybersecurity and IT Support, I bridge the gap between infrastructure and development."
               <br />
               <span className="text-[10px] font-black tracking-[0.5em] text-slate-500 mt-8 block uppercase">📍 Johannesburg, South Africa</span>
             </motion.p>
@@ -416,16 +416,16 @@ export default function App() {
                   ABOUT <br /><span className="gradient-text">ME</span>
                 </h2>
                 <p className="text-xl text-slate-300 font-medium leading-relaxed max-w-xl">
-                  A blend of technical support expertise and a passion for building intelligent systems.
+                  Building, supporting, and securing the next generation of intelligent systems.
                 </p>
               </div>
 
               <div className="space-y-8 text-slate-400 text-lg leading-relaxed max-w-xl">
                 <p>
-                  I am an IT Support Technician with Google IT Support Certificate & NQF Level 5 qualifications, bringing a strong background in troubleshooting, system support, and networking.
+                  I am a multi-disciplinary tech professional with a solid foundation in <span className="text-white font-medium">IT Support, Full-Stack Development, and Cybersecurity</span>. My journey is defined by a commitment to technical excellence—whether I'm troubleshooting complex infrastructure or architecting real-time web applications.
                 </p>
                 <p>
-                  Currently, I am transitioning into development and AI/ML. I am passionate about solving real-world problems using technology, which led me to build <span className="text-white font-medium">DevConnect</span>, a real-time collaboration platform.
+                  With certifications from Google and Cisco, I bring a unique perspective that combines <span className="text-white font-medium">security-first thinking</span> with modern development practices. I don't just build systems; I ensure they are resilient, supported, and enhanced by AI.
                 </p>
               </div>
 
@@ -442,10 +442,11 @@ export default function App() {
                 </MagneticButton>
               </div>
 
-              <div className="mt-16 grid grid-cols-2 gap-6">
+              <div className="mt-16 grid md:grid-cols-3 gap-6">
                 {[
                   { label: "NQF 5", sub: "IT System Support", href: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/esther_khumalo_capaciti_org_za/IQC36YoycV4sQ6XRJ8vwYUJwAeCkliha5-M4KoBJM2BMieU?e=WtlhkB" },
-                  { label: "GOOGLE IT", sub: "SUPPORT CERTIFICATE", href: "https://coursera.org/share/14ead30dbfb8be7d5e5572a09793b434" }
+                  { label: "GOOGLE IT", sub: "SUPPORT CERTIFICATE", href: "https://coursera.org/share/14ead30dbfb8be7d5e5572a09793b434" },
+                  { label: "JUNIOR CYBER", sub: "SECURITY ANALYST", href: "https://1drv.ms/b/c/3de1ce3f16e840ca/IQDPgVa5h-swRIq4p5LGb1T9ATk9QZRI6NvNSxOOOU35dMo?e=b5h5eV" }
                 ].map((item, i) => (
                   <a 
                     key={i}
@@ -455,7 +456,7 @@ export default function App() {
                     className="bento-card group"
                   >
                     <div className="flex justify-between items-start mb-4">
-                      <h4 className="text-4xl font-black text-white">{item.label}</h4>
+                      <h4 className="text-2xl font-black text-white">{item.label}</h4>
                       <ExternalLink size={18} className="text-slate-600 group-hover:text-blue-400 transition-colors" />
                     </div>
                     <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest">{item.sub}</p>
@@ -797,11 +798,33 @@ export default function App() {
             title="Certifications" 
             subtitle="My formal qualifications in IT Support and systems."
           />
-          <div className="grid md:grid-cols-3 gap-6 mt-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
             {[
-              { label: "NQF Level 5", sub: "IT System Support", href: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/esther_khumalo_capaciti_org_za/IQC36YoycV4sQ6XRJ8vwYUJwAeCkliha5-M4KoBJM2BMieU?e=WtlhkB" },
-              { label: "GOOGLE IT SUPPORT", sub: "IT Support", href: "https://coursera.org/share/14ead30dbfb8be7d5e5572a09793b434" },
-              { label: "AI BADGE", sub: "Coursera Certification", href: "https://coursera.org/share/ea24281896afc4b73a728ce846475b78" }
+              { 
+                label: "NQF Level 5", 
+                sub: "IT System Support", 
+                href: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/esther_khumalo_capaciti_org_za/IQC36YoycV4sQ6XRJ8vwYUJwAeCkliha5-M4KoBJM2BMieU?e=WtlhkB",
+                desc: "Comprehensive foundation in systems administration and hardware support."
+              },
+              { 
+                label: "GOOGLE IT SUPPORT", 
+                sub: "Professional Certificate", 
+                href: "https://coursera.org/share/14ead30dbfb8be7d5e5572a09793b434",
+                desc: "Mastery of end-to-end IT support, from networking to operating systems."
+              },
+              { 
+                label: "AI BADGE", 
+                sub: "Coursera Certification", 
+                href: "https://coursera.org/share/ea24281896afc4b73a728ce846475b78",
+                desc: "Practical understanding of AI tools and machine learning fundamentals."
+              },
+              { 
+                label: "JUNIOR CYBERSECURITY", 
+                sub: "Cisco Networking Academy", 
+                href: "https://1drv.ms/b/c/3de1ce3f16e840ca/IQDPgVa5h-swRIq4p5LGb1T9ATk9QZRI6NvNSxOOOU35dMo?e=b5h5eV",
+                featured: true,
+                desc: "Security awareness, threat identification, and system protection fundamentals."
+              }
             ].map((cert, i) => (
               <motion.a 
                 key={i}
@@ -812,14 +835,17 @@ export default function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bento-card group flex flex-col justify-between"
+                className={`bento-card group flex flex-col justify-between ${cert.featured ? 'border-blue-500/30 bg-blue-500/5' : ''}`}
               >
-                <div className="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 mb-8">
-                  <CheckCircle2 size={28} />
-                </div>
                 <div>
-                  <h4 className="text-2xl font-black tracking-tight uppercase mb-2">{cert.label}</h4>
-                  <p className="text-slate-500 font-black text-[10px] uppercase tracking-widest">{cert.sub}</p>
+                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-500 mb-8 ${cert.featured ? 'bg-blue-600 text-white' : 'bg-blue-500/10 text-blue-400 group-hover:bg-blue-600 group-hover:text-white'}`}>
+                    <CheckCircle2 size={28} />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-black tracking-tight uppercase mb-2">{cert.label}</h4>
+                    <p className="text-slate-500 font-black text-[10px] uppercase tracking-widest mb-4">{cert.sub}</p>
+                    <p className="text-slate-400 text-xs leading-relaxed font-light">{cert.desc}</p>
+                  </div>
                 </div>
                 <div className="mt-8 flex justify-end">
                   <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:border-blue-500/50 transition-colors">
