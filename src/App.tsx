@@ -319,8 +319,8 @@ export default function App() {
               transition={{ delay: 1.2, duration: 1 }}
               className="text-lg md:text-xl text-slate-400 mb-16 font-light max-w-2xl mx-auto leading-relaxed"
             >
-              "I build, support, and secure intelligent systems using <span className="text-white font-medium">React, Firebase, and AI tools</span>. 
-              Certified in Cybersecurity and IT Support, I bridge the gap between infrastructure and development."
+              "I am a job-ready IT Support professional with a <span className="text-white font-medium">98% Service Operations Practitioner</span> result. 
+              Certified in <span className="text-white font-medium">Cisco Cybersecurity</span> and AI, I build, support, and secure resilient systems with a focus on operational excellence."
               <br />
               <span className="text-[10px] font-black tracking-[0.5em] text-slate-500 mt-8 block uppercase">📍 Johannesburg, South Africa</span>
             </motion.p>
@@ -422,10 +422,10 @@ export default function App() {
 
               <div className="space-y-8 text-slate-400 text-lg leading-relaxed max-w-xl">
                 <p>
-                  I am a multi-disciplinary tech professional with a solid foundation in <span className="text-white font-medium">IT Support, Full-Stack Development, and Cybersecurity</span>. My journey is defined by a commitment to technical excellence—whether I'm troubleshooting complex infrastructure or architecting real-time web applications.
+                  I am a high-performing IT Support professional with a deep expertise in <span className="text-white font-medium">troubleshooting, diagnostics, and networking fundamentals</span>. My technical foundation is validated by a 98% score in Service Operations, demonstrating my ability to manage complex system operations and cloud fundamentals.
                 </p>
                 <p>
-                  With certifications from Google and Cisco, I bring a unique perspective that combines <span className="text-white font-medium">security-first thinking</span> with modern development practices. I don't just build systems; I ensure they are resilient, supported, and enhanced by AI.
+                  I specialize in <span className="text-white font-medium">securing and supporting modern IT environments</span>. By combining my Cisco Cybersecurity background with full-stack development skills, I build systems that are not only functional but also secure, scalable, and easy to maintain.
                 </p>
               </div>
 
@@ -443,6 +443,25 @@ export default function App() {
               </div>
 
               <div className="mt-16 grid md:grid-cols-3 gap-6">
+                <div className="md:col-span-3 bento-card bg-blue-600/10 border-blue-500/30 flex flex-col md:flex-row items-center justify-between p-8 gap-6">
+                  <div className="flex items-center gap-6">
+                    <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center text-white shadow-xl shadow-blue-600/20">
+                      <CheckCircle2 size={32} />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-black text-white uppercase tracking-tight">Service Operations Practitioner – 98% Pass</h4>
+                      <p className="text-slate-400 text-sm mt-1">Validates elite-level IT support, troubleshooting, and networking skills.</p>
+                    </div>
+                  </div>
+                  <MagneticButton>
+                    <a 
+                      href="#" 
+                      className="px-8 py-4 rounded-xl bg-blue-600 text-white font-black uppercase tracking-widest text-xs hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20"
+                    >
+                      View Certificate
+                    </a>
+                  </MagneticButton>
+                </div>
                 {[
                   { label: "NQF 5", sub: "IT System Support", href: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/esther_khumalo_capaciti_org_za/IQC36YoycV4sQ6XRJ8vwYUJwAeCkliha5-M4KoBJM2BMieU?e=WtlhkB" },
                   { label: "GOOGLE IT", sub: "SUPPORT CERTIFICATE", href: "https://coursera.org/share/14ead30dbfb8be7d5e5572a09793b434" },
@@ -506,26 +525,26 @@ export default function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
             {[
               {
-                title: "NQF Level 5",
-                desc: "Qualified in IT, providing a solid theoretical and practical foundation.",
+                title: "Service Operations",
+                desc: "Validated 98% score in troubleshooting, networking (TCP/IP), and system operations.",
                 icon: CheckCircle2,
                 color: "blue"
               },
               {
-                title: "Hybrid Expertise",
-                desc: "Strong background in both development and IT support environments.",
+                title: "Diagnostics Expert",
+                desc: "Strong background in hardware support and complex system diagnostics.",
                 icon: Cpu,
                 color: "purple"
               },
               {
-                title: "Real-World Focus",
-                desc: "Built functional applications with modern stacks like React and Firebase.",
+                title: "Cloud & Modern IT",
+                desc: "Proficient in cloud fundamentals and modern IT operational standards.",
                 icon: Code2,
                 color: "blue"
               },
               {
-                title: "Team Player",
-                desc: "Fast learner with a collaborative mindset and strong problem-solving skills.",
+                title: "Security Mindset",
+                desc: "Cisco certified in cybersecurity, ensuring all systems are protected by design.",
                 icon: Network,
                 color: "purple"
               }
@@ -563,7 +582,7 @@ export default function App() {
             <SkillCard 
               icon={Network}
               title="Infrastructure"
-              skills={["Active Directory", "Troubleshooting", "Networking", "System Admin"]}
+              skills={["Troubleshooting", "TCP/IP Networking", "Firewalls", "Active Directory", "Cloud Fundamentals"]}
               color="blue"
             />
             <SkillCard 
@@ -640,7 +659,7 @@ export default function App() {
                 </div>
                 <h3 className="text-5xl md:text-7xl font-black mb-10 tracking-tighter uppercase leading-none">DEVCONNECT</h3>
                 <p className="text-xl text-slate-400 mb-12 leading-relaxed font-light">
-                  A real-time collaboration platform built with React and Firebase to help teams manage tasks and communicate efficiently.
+                  A real-time collaboration platform where my <span className="text-white font-medium">98% validated operational knowledge</span> ensured a stable, secure, and performant architecture. I applied advanced troubleshooting and system support principles to build a resilient multi-user environment.
                 </p>
 
                 <div className="grid grid-cols-2 gap-12 mb-16">
@@ -798,13 +817,20 @@ export default function App() {
             title="Certifications" 
             subtitle="My formal qualifications in IT Support and systems."
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
             {[
               { 
-                label: "NQF Level 5", 
-                sub: "IT System Support", 
-                href: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/esther_khumalo_capaciti_org_za/IQC36YoycV4sQ6XRJ8vwYUJwAeCkliha5-M4KoBJM2BMieU?e=WtlhkB",
-                desc: "Comprehensive foundation in systems administration and hardware support."
+                label: "SERVICE OPERATIONS", 
+                sub: "Practitioner Assessment (SFIA aligned) – 98% Pass", 
+                href: "#",
+                featured: true,
+                desc: "Validated 98% score (49/50) demonstrating mastery in troubleshooting, TCP/IP networking, firewalls, hardware support, and cloud fundamentals. Completed in 18m 43s."
+              },
+              { 
+                label: "JUNIOR CYBERSECURITY", 
+                sub: "Cisco Networking Academy", 
+                href: "https://1drv.ms/b/c/3de1ce3f16e840ca/IQDPgVa5h-swRIq4p5LGb1T9ATk9QZRI6NvNSxOOOU35dMo?e=b5h5eV",
+                desc: "Security awareness, threat identification, and system protection fundamentals."
               },
               { 
                 label: "GOOGLE IT SUPPORT", 
@@ -813,17 +839,16 @@ export default function App() {
                 desc: "Mastery of end-to-end IT support, from networking to operating systems."
               },
               { 
+                label: "NQF Level 5", 
+                sub: "IT System Support", 
+                href: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/esther_khumalo_capaciti_org_za/IQC36YoycV4sQ6XRJ8vwYUJwAeCkliha5-M4KoBJM2BMieU?e=WtlhkB",
+                desc: "Comprehensive foundation in systems administration and hardware support."
+              },
+              { 
                 label: "AI BADGE", 
                 sub: "Coursera Certification", 
                 href: "https://coursera.org/share/ea24281896afc4b73a728ce846475b78",
                 desc: "Practical understanding of AI tools and machine learning fundamentals."
-              },
-              { 
-                label: "JUNIOR CYBERSECURITY", 
-                sub: "Cisco Networking Academy", 
-                href: "https://1drv.ms/b/c/3de1ce3f16e840ca/IQDPgVa5h-swRIq4p5LGb1T9ATk9QZRI6NvNSxOOOU35dMo?e=b5h5eV",
-                featured: true,
-                desc: "Security awareness, threat identification, and system protection fundamentals."
               }
             ].map((cert, i) => (
               <motion.a 
