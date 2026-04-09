@@ -102,8 +102,9 @@ const Navbar = () => {
           ))}
             <MagneticButton>
               <a
-                href="/Sinenhlanhla_Khumalo_CV.pdf"
-                download
+                href="https://capeitinitiative-my.sharepoint.com/:b:/r/personal/esther_khumalo_capaciti_org_za/Documents/CV_202604091036393%20(1).pdf?csf=1&web=1&e=SzWHFJ"
+                target="_blank"
+                rel="noreferrer"
                 className="px-6 py-3 rounded-xl bg-white text-black text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all duration-500 flex items-center gap-2 shadow-xl"
               >
                 <Download size={14} />
@@ -142,8 +143,9 @@ const Navbar = () => {
                 </motion.a>
               ))}
               <motion.a 
-                href="/Sinenhlanhla_Khumalo_CV.pdf" 
-                download
+                href="https://capeitinitiative-my.sharepoint.com/:b:/r/personal/esther_khumalo_capaciti_org_za/Documents/CV_202604091036393%20(1).pdf?csf=1&web=1&e=SzWHFJ" 
+                target="_blank"
+                rel="noreferrer"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
@@ -226,6 +228,7 @@ const SkillCard = ({ icon: Icon, title, skills, logos, color }: { icon: any, tit
 export default function App() {
   const GITHUB_PROFILE = "https://github.com/Sne1623";
   const DEVCONNECT_REPO = "https://dev-connect-system.vercel.app/";
+  const SYS_ADMIN_REPO = "https://github.com/Sne1623/COURSE-4-SYSTEM-ADMINISTRATION-PRACTICAL-TASK";
   const LINKEDIN_PROFILE = "http://www.linkedin.com/in/sinenhlanhla-khumalo-337923395";
   const WHATSAPP_LINK = "https://wa.me/27602077059";
 
@@ -432,8 +435,9 @@ export default function App() {
               <div className="mt-12">
                 <MagneticButton className="inline-block">
                   <a 
-                    href="/Sinenhlanhla_Khumalo_CV.pdf" 
-                    download
+                    href="https://capeitinitiative-my.sharepoint.com/:b:/r/personal/esther_khumalo_capaciti_org_za/Documents/CV_202604091036393%20(1).pdf?csf=1&web=1&e=SzWHFJ" 
+                    target="_blank"
+                    rel="noreferrer"
                     className="px-10 py-5 rounded-2xl bg-blue-600 text-white font-black uppercase tracking-widest transition-all flex items-center gap-4 shadow-2xl shadow-blue-600/20 hover:bg-blue-500"
                   >
                     <Download size={20} />
@@ -449,13 +453,15 @@ export default function App() {
                       <CheckCircle2 size={32} />
                     </div>
                     <div>
-                      <h4 className="text-2xl font-black text-white uppercase tracking-tight">Service Operations Practitioner – 98% Pass</h4>
+                      <h4 className="text-2xl font-black text-white uppercase tracking-tight">SFIA TEST: Service Operations – 98% Pass</h4>
                       <p className="text-slate-400 text-sm mt-1">Validates elite-level IT support, troubleshooting, and networking skills.</p>
                     </div>
                   </div>
                   <MagneticButton>
                     <a 
-                      href="#" 
+                      href="https://capeitinitiative.sharepoint.com/:b:/s/CapacitiDemand11/IQCJFuxrFtKlRbLVGc1vIC08AVaBLOYsQfFC9STkw5NoOu0?e=UIIK5N" 
+                      target="_blank"
+                      rel="noreferrer"
                       className="px-8 py-4 rounded-xl bg-blue-600 text-white font-black uppercase tracking-widest text-xs hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20"
                     >
                       View Certificate
@@ -610,98 +616,174 @@ export default function App() {
         </div>
       </section>
 
-      {/* Featured Project Section */}
+      {/* Projects Section */}
       <section id="project" className="py-40 relative overflow-hidden">
         <div className="absolute top-1/2 left-0 w-1/2 h-1/2 bg-purple-600/5 blur-[120px] -z-10" />
         
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading 
             number="04"
-            title="Featured Project" 
-            subtitle="DevConnect: A real-time SaaS collaboration platform."
+            title="Technical Projects" 
+            subtitle="Showcasing my expertise in system support and development."
           />
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bento-card !p-0 overflow-hidden group border-white/5"
-          >
-            <div className="grid lg:grid-cols-2">
-              <div className="relative overflow-hidden aspect-video lg:aspect-auto bg-slate-950">
-                <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" 
-                  alt="DevConnect Dashboard Mockup" 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-40"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-transparent to-purple-600/20" />
+          <div className="space-y-20">
+            {/* Project 1: DevConnect */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bento-card !p-0 overflow-hidden group border-white/5"
+            >
+              <div className="grid lg:grid-cols-2">
+                <div className="relative overflow-hidden aspect-video lg:aspect-auto bg-slate-950">
+                  <img 
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" 
+                    alt="DevConnect Dashboard Mockup" 
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-40"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-transparent to-purple-600/20" />
+                  
+                  <div className="absolute inset-0 flex items-center justify-center p-12">
+                    <motion.div 
+                      initial={{ scale: 0.9, opacity: 0 }}
+                      whileInView={{ scale: 1, opacity: 1 }}
+                      className="p-10 rounded-[2rem] bg-black/60 backdrop-blur-2xl border border-white/10 text-center shadow-2xl"
+                    >
+                      <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center mx-auto mb-6">
+                        <div className="w-3 h-3 rounded-full bg-blue-500 animate-ping" />
+                      </div>
+                      <p className="text-blue-400 font-black text-xs tracking-[0.4em] uppercase mb-4">System Status</p>
+                      <p className="text-white text-3xl font-black tracking-tighter uppercase">LIVE DEPLOYMENT</p>
+                    </motion.div>
+                  </div>
+                </div>
                 
-                <div className="absolute inset-0 flex items-center justify-center p-12">
-                  <motion.div 
-                    initial={{ scale: 0.9, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
-                    className="p-10 rounded-[2rem] bg-black/60 backdrop-blur-2xl border border-white/10 text-center shadow-2xl"
-                  >
-                    <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center mx-auto mb-6">
-                      <div className="w-3 h-3 rounded-full bg-blue-500 animate-ping" />
+                <div className="p-12 md:p-20 flex flex-col justify-center relative">
+                  <div className="flex items-center gap-3 text-blue-500 text-xs font-black uppercase tracking-[0.3em] mb-8">
+                    <div className="w-8 h-[1px] bg-blue-500" />
+                    SaaS Solution
+                  </div>
+                  <h3 className="text-5xl md:text-7xl font-black mb-10 tracking-tighter uppercase leading-none">DEVCONNECT</h3>
+                  <p className="text-xl text-slate-400 mb-12 leading-relaxed font-light">
+                    A real-time collaboration platform where my <span className="text-white font-medium">98% validated operational knowledge</span> ensured a stable, secure, and performant architecture. I applied advanced troubleshooting and system support principles to build a resilient multi-user environment.
+                  </p>
+
+                  <div className="grid grid-cols-2 gap-12 mb-16">
+                    <div>
+                      <h4 className="text-white font-black mb-4 flex items-center gap-3 uppercase text-[10px] tracking-[0.3em]">
+                        <Database size={14} className="text-blue-500" /> Stack
+                      </h4>
+                      <p className="text-sm text-slate-500 font-medium leading-relaxed">React, Firebase, Tailwind CSS, Framer Motion</p>
                     </div>
-                    <p className="text-blue-400 font-black text-xs tracking-[0.4em] uppercase mb-4">System Status</p>
-                    <p className="text-white text-3xl font-black tracking-tighter uppercase">LIVE DEPLOYMENT</p>
-                  </motion.div>
+                    <div>
+                      <h4 className="text-white font-black mb-4 flex items-center gap-3 uppercase text-[10px] tracking-[0.3em]">
+                        <Monitor size={14} className="text-blue-500" /> Core
+                      </h4>
+                      <p className="text-sm text-slate-500 font-medium leading-relaxed">Real-time sync, Multi-user collaboration</p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-6">
+                    <MagneticButton>
+                      <a 
+                        href={DEVCONNECT_REPO}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="px-10 py-5 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-black transition-all flex items-center gap-3 shadow-2xl shadow-blue-600/20 group"
+                      >
+                        Explore <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
+                      </a>
+                    </MagneticButton>
+                    <MagneticButton>
+                      <a 
+                        href={GITHUB_PROFILE} 
+                        target="_blank"
+                        rel="noreferrer"
+                        className="px-10 py-5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-black transition-all flex items-center gap-3 backdrop-blur-xl"
+                      >
+                        <Github size={18} /> Source
+                      </a>
+                    </MagneticButton>
+                  </div>
                 </div>
               </div>
-              
-              <div className="p-12 md:p-20 flex flex-col justify-center relative">
-                <div className="flex items-center gap-3 text-blue-500 text-xs font-black uppercase tracking-[0.3em] mb-8">
-                  <div className="w-8 h-[1px] bg-blue-500" />
-                  SaaS Solution
-                </div>
-                <h3 className="text-5xl md:text-7xl font-black mb-10 tracking-tighter uppercase leading-none">DEVCONNECT</h3>
-                <p className="text-xl text-slate-400 mb-12 leading-relaxed font-light">
-                  A real-time collaboration platform where my <span className="text-white font-medium">98% validated operational knowledge</span> ensured a stable, secure, and performant architecture. I applied advanced troubleshooting and system support principles to build a resilient multi-user environment.
-                </p>
+            </motion.div>
 
-                <div className="grid grid-cols-2 gap-12 mb-16">
-                  <div>
-                    <h4 className="text-white font-black mb-4 flex items-center gap-3 uppercase text-[10px] tracking-[0.3em]">
-                      <Database size={14} className="text-blue-500" /> Stack
-                    </h4>
-                    <p className="text-sm text-slate-500 font-medium leading-relaxed">React, Firebase, Tailwind CSS, Framer Motion</p>
+            {/* Project 2: Systems Administration */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bento-card !p-0 overflow-hidden group border-white/5"
+            >
+              <div className="grid lg:grid-cols-2">
+                <div className="p-12 md:p-20 flex flex-col justify-center relative order-2 lg:order-1">
+                  <div className="flex items-center gap-3 text-purple-500 text-xs font-black uppercase tracking-[0.3em] mb-8">
+                    <div className="w-8 h-[1px] bg-purple-500" />
+                    Infrastructure
                   </div>
-                  <div>
-                    <h4 className="text-white font-black mb-4 flex items-center gap-3 uppercase text-[10px] tracking-[0.3em]">
-                      <Monitor size={14} className="text-blue-500" /> Core
-                    </h4>
-                    <p className="text-sm text-slate-500 font-medium leading-relaxed">Real-time sync, Multi-user collaboration</p>
+                  <h3 className="text-5xl md:text-7xl font-black mb-10 tracking-tighter uppercase leading-none">SYSTEMS ADMINISTRATION</h3>
+                  <p className="text-xl text-slate-400 mb-12 leading-relaxed font-light">
+                    A comprehensive practical task demonstrating expertise in <span className="text-white font-medium">server management, security protocols, and system optimization</span>. This project validates my ability to maintain high-availability systems and implement robust security measures in a modern IT environment.
+                  </p>
+
+                  <div className="grid grid-cols-2 gap-12 mb-16">
+                    <div>
+                      <h4 className="text-white font-black mb-4 flex items-center gap-3 uppercase text-[10px] tracking-[0.3em]">
+                        <Server size={14} className="text-purple-500" /> Focus
+                      </h4>
+                      <p className="text-sm text-slate-500 font-medium leading-relaxed">Linux, Bash, Security Hardening</p>
+                    </div>
+                    <div>
+                      <h4 className="text-white font-black mb-4 flex items-center gap-3 uppercase text-[10px] tracking-[0.3em]">
+                        <Cpu size={14} className="text-purple-500" /> Skills
+                      </h4>
+                      <p className="text-sm text-slate-500 font-medium leading-relaxed">Troubleshooting, System Monitoring</p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-6">
+                    <MagneticButton>
+                      <a 
+                        href={SYS_ADMIN_REPO}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="px-10 py-5 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white font-black transition-all flex items-center gap-3 shadow-2xl shadow-purple-600/20 group"
+                      >
+                        View Repository <Github size={18} className="group-hover:translate-x-1 transition-transform" />
+                      </a>
+                    </MagneticButton>
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-6">
-                  <MagneticButton>
-                    <a 
-                      href={DEVCONNECT_REPO}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="px-10 py-5 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-black transition-all flex items-center gap-3 shadow-2xl shadow-blue-600/20 group"
+                <div className="relative overflow-hidden aspect-video lg:aspect-auto bg-slate-950 order-1 lg:order-2">
+                  <img 
+                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=1200" 
+                    alt="Systems Administration Mockup" 
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-40"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-transparent to-blue-600/20" />
+                  
+                  <div className="absolute inset-0 flex items-center justify-center p-12">
+                    <motion.div 
+                      initial={{ scale: 0.9, opacity: 0 }}
+                      whileInView={{ scale: 1, opacity: 1 }}
+                      className="p-10 rounded-[2rem] bg-black/60 backdrop-blur-2xl border border-white/10 text-center shadow-2xl"
                     >
-                      Explore <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
-                    </a>
-                  </MagneticButton>
-                  <MagneticButton>
-                    <a 
-                      href={GITHUB_PROFILE} 
-                      target="_blank"
-                      rel="noreferrer"
-                      className="px-10 py-5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-black transition-all flex items-center gap-3 backdrop-blur-xl"
-                    >
-                      <Github size={18} /> Source
-                    </a>
-                  </MagneticButton>
+                      <div className="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center mx-auto mb-6">
+                        <Terminal size={24} className="text-purple-500" />
+                      </div>
+                      <p className="text-purple-400 font-black text-xs tracking-[0.4em] uppercase mb-4">Infrastructure</p>
+                      <p className="text-white text-3xl font-black tracking-tighter uppercase">SYSTEMS OPS</p>
+                    </motion.div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -820,9 +902,9 @@ export default function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
             {[
               { 
-                label: "SERVICE OPERATIONS", 
-                sub: "Practitioner Assessment (SFIA aligned) – 98% Pass", 
-                href: "#",
+                label: "SFIA TEST", 
+                sub: "Service Operations – 98% Pass", 
+                href: "https://capeitinitiative.sharepoint.com/:b:/s/CapacitiDemand11/IQCJFuxrFtKlRbLVGc1vIC08AVaBLOYsQfFC9STkw5NoOu0?e=UIIK5N",
                 featured: true,
                 desc: "Validated 98% score (49/50) demonstrating mastery in troubleshooting, TCP/IP networking, firewalls, hardware support, and cloud fundamentals. Completed in 18m 43s."
               },
