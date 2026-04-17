@@ -251,6 +251,17 @@ export default function App() {
     <div className="min-h-screen selection:bg-blue-500/30 relative">
       <div className="noise-overlay" />
       
+      {/* Global Tech Background */}
+      <div className="fixed inset-0 -z-30 pointer-events-none overflow-hidden">
+        <img 
+          src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1920" 
+          className="w-full h-full object-cover opacity-[0.05] grayscale" 
+          alt="Robotics background"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-[#030712]/40" />
+      </div>
+
       {/* Scroll Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-blue-600 z-[60] origin-left"
@@ -267,6 +278,10 @@ export default function App() {
           <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-600/10 blur-[150px] rounded-full animate-pulse-slow" />
           <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-purple-600/10 blur-[150px] rounded-full animate-pulse-slow" style={{ animationDelay: '4s' }} />
           <div className="absolute inset-0 grid-pattern opacity-10" />
+          {/* Tech accents */}
+          <div className="absolute top-0 right-0 w-1/2 h-full opacity-15 overflow-hidden pointer-events-none">
+            <div className="w-full h-full transform translate-x-1/2 -rotate-12 border-l border-blue-500/20" />
+          </div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
@@ -323,7 +338,7 @@ export default function App() {
               className="text-lg md:text-xl text-slate-400 mb-16 font-light max-w-2xl mx-auto leading-relaxed"
             >
               "I am a job-ready IT Support professional with a <span className="text-white font-medium">98% Service Operations Practitioner</span> result. 
-              Certified in <span className="text-white font-medium">Cisco Cybersecurity</span> and AI, I build, support, and secure resilient systems with a focus on operational excellence."
+              Certified in <span className="text-white font-medium">Cisco Cybersecurity</span>, Power BI, and AI, I build, support, and secure resilient systems with a focus on operational excellence."
               <br />
               <span className="text-[10px] font-black tracking-[0.5em] text-slate-500 mt-8 block uppercase">📍 Johannesburg, South Africa</span>
             </motion.p>
@@ -428,7 +443,7 @@ export default function App() {
                   I am a high-performing IT Support professional with a deep expertise in <span className="text-white font-medium">troubleshooting, diagnostics, and networking fundamentals</span>. My technical foundation is validated by a 98% score in Service Operations, demonstrating my ability to manage complex system operations and cloud fundamentals.
                 </p>
                 <p>
-                  I specialize in <span className="text-white font-medium">securing and supporting modern IT environments</span>. By combining my Cisco Cybersecurity background with full-stack development skills, I build systems that are not only functional but also secure, scalable, and easy to maintain.
+                  I specialize in <span className="text-white font-medium">securing and supporting modern IT environments</span>. By combining my Cisco Cybersecurity and Data Analytics background with full-stack development skills, I build systems that are not only functional but also secure, scalable, and easy to maintain.
                 </p>
               </div>
 
@@ -496,8 +511,17 @@ export default function App() {
               viewport={{ once: true }}
               className="md:col-span-5 relative h-full"
             >
-              <div className="bento-card h-full flex flex-col justify-center p-12">
+              <div className="bento-card h-full flex flex-col justify-center p-12 relative overflow-hidden">
                 <div className="absolute inset-0 bg-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                {/* Decorative Robot Background */}
+                <div className="absolute -right-20 -bottom-10 w-80 h-80 opacity-[0.03] group-hover:opacity-[0.07] transition-opacity pointer-events-none transform rotate-12">
+                  <img 
+                    src="https://images.unsplash.com/photo-1546776310-eef45dd6d63c?auto=format&fit=crop&q=80&w=600" 
+                    alt="Robot decorative" 
+                    className="w-full h-full object-contain grayscale"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
                 <Terminal className="text-blue-500 mb-10" size={56} />
                 <h3 className="text-4xl font-black text-white mb-8 tracking-tight uppercase">Technical Philosophy</h3>
                 <div className="space-y-6">
@@ -527,6 +551,21 @@ export default function App() {
             title="Why Hire Me" 
             subtitle="Bridging the gap between technical support and full-stack development."
           />
+
+          <div className="flex flex-wrap gap-4 mb-20">
+            {["System Resilience", "Operational Excellence", "Security by Design", "Rapid Diagnostics", "User-Centric Support"].map((value, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="px-6 py-3 rounded-full bg-white/5 border border-white/10 text-slate-400 text-[10px] font-black uppercase tracking-widest"
+              >
+                {value}
+              </motion.span>
+            ))}
+          </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
             {[
@@ -605,13 +644,40 @@ export default function App() {
             <SkillCard 
               icon={Cpu}
               title="AI & Data"
-              skills={["Python", "Data Analysis", "Machine Learning", "Neural Networks"]}
+              skills={["Python", "Power BI", "Data Analysis", "Advanced Excel", "Machine Learning"]}
               color="blue"
               logos={[
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
               ]}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Operational Excellence Section */}
+      <section className="py-24 relative overflow-hidden bg-white/5 border-y border-white/10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-12">
+            {[
+              { val: "98%", label: "SFIA Service Ops Score", desc: "Top-tier operational diagnostics" },
+              { val: "100%", label: "Hardware Support Mastery", desc: "End-to-end device maintenance" },
+              { val: "95%", label: "Cybersecurity Grade", desc: "System hardening & threat audit" },
+              { val: "50+", label: "Tasks Automations", desc: "Bash & Python efficiency" }
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="text-center md:text-left"
+              >
+                <h3 className="text-5xl font-black text-white mb-2 tracking-tighter uppercase">{stat.val}</h3>
+                <p className="text-blue-500 font-black text-[10px] uppercase tracking-[0.3em] mb-4">{stat.label}</p>
+                <p className="text-slate-500 text-sm font-light leading-relaxed">{stat.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
@@ -724,23 +790,30 @@ export default function App() {
                     <div className="w-8 h-[1px] bg-purple-500" />
                     Infrastructure
                   </div>
-                  <h3 className="text-5xl md:text-7xl font-black mb-10 tracking-tighter uppercase leading-none">SYSTEMS ADMINISTRATION</h3>
+                  <a 
+                    href={SYS_ADMIN_REPO}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-purple-400 transition-colors"
+                  >
+                    <h3 className="text-5xl md:text-7xl font-black mb-10 tracking-tighter uppercase leading-none">SYSTEMS ADMINISTRATION</h3>
+                  </a>
                   <p className="text-xl text-slate-400 mb-12 leading-relaxed font-light">
-                    A comprehensive practical task demonstrating expertise in <span className="text-white font-medium">server management, security protocols, and system optimization</span>. This project validates my ability to maintain high-availability systems and implement robust security measures in a modern IT environment.
+                    A comprehensive practical task demonstrating expertise in <span className="text-white font-medium">server management, security protocols, and system optimization</span>. This project validates my ability to maintain high-availability systems, implement robust security measures, and perform advanced <span className="text-white font-medium">IT Support operations</span> in a modern IT environment.
                   </p>
 
                   <div className="grid grid-cols-2 gap-12 mb-16">
                     <div>
                       <h4 className="text-white font-black mb-4 flex items-center gap-3 uppercase text-[10px] tracking-[0.3em]">
-                        <Server size={14} className="text-purple-500" /> Focus
+                        <Server size={14} className="text-purple-500" /> Infrastructure
                       </h4>
-                      <p className="text-sm text-slate-500 font-medium leading-relaxed">Linux, Bash, Security Hardening</p>
+                      <p className="text-sm text-slate-500 font-medium leading-relaxed">Linux Administration, Bash Scripting, Web Server Config</p>
                     </div>
                     <div>
                       <h4 className="text-white font-black mb-4 flex items-center gap-3 uppercase text-[10px] tracking-[0.3em]">
-                        <Cpu size={14} className="text-purple-500" /> Skills
+                        <Cpu size={14} className="text-purple-500" /> IT Support
                       </h4>
-                      <p className="text-sm text-slate-500 font-medium leading-relaxed">Troubleshooting, System Monitoring</p>
+                      <p className="text-sm text-slate-500 font-medium leading-relaxed">System Diagnostics, Security Hardening, Troubleshooting</p>
                     </div>
                   </div>
 
@@ -852,9 +925,10 @@ export default function App() {
                 title: "IT Support Technician",
                 sub: "Technical Operations",
                 points: [
-                  "Troubleshooting complex network and system issues to ensure maximum operational efficiency.",
-                  "Supporting users with hardware and software problems, providing high-quality technical assistance.",
-                  "Maintaining system performance and uptime through proactive monitoring and maintenance."
+                  "Troubleshooting complex network and system issues (TCP/IP, DNS, DHCP) to ensure 99.9% uptime.",
+                  "Managing Active Directory user groups and security permissions for optimized access control.",
+                  "Supporting internal users via help desk systems, maintaining a high SLA resolution rate.",
+                  "Maintaining system performance and security through proactive monitoring and infrastructure hardening."
                 ]
               }
             ].map((item, i) => (
@@ -931,6 +1005,12 @@ export default function App() {
                 sub: "Coursera Certification", 
                 href: "https://coursera.org/share/ea24281896afc4b73a728ce846475b78",
                 desc: "Practical understanding of AI tools and machine learning fundamentals."
+              },
+              { 
+                label: "AI & POWER BI", 
+                sub: "CareerBoost Certification", 
+                href: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/sinenhlanhla_khumalo_capaciti_org_za/IQBOy51fr4shS6GN4WpURjRhAWWkN4s4aIeqFiFHA6q-USY?e=lhU6yn",
+                desc: "Professional certification in Generative AI, Power BI data visualization, and advanced Excel for data-driven decision making."
               }
             ].map((cert, i) => (
               <motion.a 
